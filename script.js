@@ -5,6 +5,7 @@ function imprimir(mensaje,id) {
 }
 
 
+
 function bienvenida(){
     let nombrebienvenida = document.getElementById("e9texto").value;
     let mensaje = "Bienvenido/a a su examen: " + nombrebienvenida + ". Por favor, complete las preguntas. Dispone de 60 minutos.";
@@ -13,6 +14,10 @@ function bienvenida(){
     funcionesbienvenida.style.color = newColor5;
 }
 
+
+
+let listaPreguntas = document.getElementById("preguntatexto");
+ listaPreguntas.innerText = "¿Qué tipo de Pruebas se hacen después de un despliegue? Por favor, seleccione únicamente 1 opción";;
  
     
 
