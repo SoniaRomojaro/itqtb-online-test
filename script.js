@@ -13,11 +13,7 @@ function bienvenida(){
     funcionesbienvenida.style.color = newColor5;
 }
 
-let parrafo = document.getElementById("preguntatexto");
-let mensaje ="¿Qué tipo de Pruebas se hacen después de un despliegue? Por favor, seleccione únicamente 1 opción";
-imprimir =(mensaje,"hola");
  
-
     
 
 function mostrarrespuesta () {
