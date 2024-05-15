@@ -1,25 +1,25 @@
 
-function imprimir(mensaje,id) {
+function imprimir(mensaje, id) {
     let parrafo = document.getElementById(id);
     parrafo.innerText = mensaje;
 }
 
 
-function bienvenida(){
+function bienvenida() {
     let nombrebienvenida = document.getElementById("e9texto").value;
     let mensaje = "Bienvenido/a a su examen: " + nombrebienvenida + ". Por favor, complete las preguntas. Dispone de 60 minutos.";
-    imprimir(mensaje,"funcionesbienvenida");
+    imprimir(mensaje, "funcionesbienvenida");
     let newColor5 = "blue";
     funcionesbienvenida.style.color = newColor5;
 }
 
- 
-    
 
-function mostrarrespuesta () {
+
+
+function mostrarrespuesta() {
     let respuestaSeleccionada = document.getElementById("pregunta1").value;
     let mensaje = "Su respuesta: " + respuestaSeleccionada;
-    imprimir(mensaje,"hacontestado");
+    imprimir(mensaje, "hacontestado");
     let newColor = "violet";
     pregunta1.style.color = newColor;
     let newColor3 = "blue";
