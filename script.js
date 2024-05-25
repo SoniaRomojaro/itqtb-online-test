@@ -29,9 +29,38 @@ function mostrarrespuesta() {
     parrafo.innerText = "La respuesta correcta es B: Pruebas de Regresión";
     let newColor2 = "green";
     mostrarrespuesta1.style.color = newColor2;
+}
 
 
+function vercorrecta() {
+    let respuesta = document.getElementById("pregunta1").value;
+    let mensaje = "";
+    if (respuesta === "B. Pruebas de Regresión") {
+        mensaje = "Respuesta Correcta";
+    }
+    else if (respuesta === "No ha cumplimentado la respuesta") {
+        mensaje = "No ha cumplimentado su respuesta";
+    }
 
+    else {
+        mensaje = "Repuesta Incorrecta";
+    }
+    imprimir(mensaje, "correcta");
+}
 
-
+function verpuntuacion() {
+    let puntuacion = document.getElementById("pregunta1").value;
+    let mensaje = "";
+    let puntos;
+    if (puntuacion === "B. Pruebas de Regresión") {
+        puntos = 2;
+    }
+    else if (puntuacion === "No ha cumplimentado la respuesta") {
+        puntos = 0;
+    }
+    else {
+        puntos = -1;
+    }
+    mensaje = "Su puntuación es de: " + puntos;
+    imprimir(mensaje, "puntuacion");
 }
