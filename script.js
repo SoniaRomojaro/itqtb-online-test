@@ -28,7 +28,6 @@ function seleccionarPreguntacontestar() {
     let elemento = document.getElementById("preguntaseleccionada").value;
     let posicionpregunta = listaPreguntas.indexOf(elemento);
     let mensaje = ""
-    let haz
     if(posicionpregunta === -1){
         mensaje = "El elemento no se encuentra en la lista";
        
