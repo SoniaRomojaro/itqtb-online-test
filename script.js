@@ -14,7 +14,7 @@ function bienvenida() {
 }
 
 
-let listaPreguntas = ["1.¿Qué tipo de pruebas se hacen tras un despliegue?", "2. Pregunta2", "3. Pregunta3", "4. Pregunta4", "5. Pregunta5", "6. Pregunta6", "7. Pregunta7", "8. Pregunta8", "9. Pregunta9", "10. Pregunta10"];
+let listaPreguntas = ["1.¿Qué tipo de pruebas se hacen tras un despliegue?","2. ¿Cuando se compra una nueva herramienta de prueba ¿quién debería usarla al principio?", "3. Para los casos de prueba de aceptación se deben considerar:", "4. ¿Quién define el documento de Análisis Funcional?", "5. Menciona una tarea de Prueba", "6. Entre los defectos de las pruebas se incluyen:", "7. Las pruebas de Aceptación", "8. UAT significa:", "9. Prueba Funcional:", "10. Pruebas de caja blanca:"];
 
 function mostrarLista() {
     mensaje = "Las preguntas a contestar son: " + listaPreguntas;
@@ -33,22 +33,12 @@ function seleccionarPreguntacontestar() {
        
 
     }else {
-        mensaje = "Por favor, conteste a la pregunta: " + elemento + posicionpregunta;
+        mensaje = "Por favor, conteste a la pregunta: " + elemento;
     }
    
     
-
-
-
-
-
     imprimir(mensaje,"pregunta");
 }
-
-
-
-
-
 
 
 
@@ -86,3 +76,67 @@ function vercorrecta() {
     imprimir(mensaje, "correcta");
 }
 
+function mostrarrespuesta2() {
+    let respuestaSeleccionada2 = document.getElementById("pregunta2").value;
+    let mensaje = "Su respuesta: " + respuestaSeleccionada2;
+    imprimir(mensaje, "hacontestado2");
+
+    let parrafo = document.getElementById("mostrarrespuesta2");
+    parrafo.innerText = "La respuesta correcta es C. Todos aquellos que puedan tener algún uso para la herramienta";
+    let newColor2 = "green";
+    mostrarrespuesta1.style.color = newColor2;
+}
+
+
+function vercorrecta2() {
+    let respuesta = document.getElementById("pregunta2").value;
+    let mensaje = "";
+    let puntuacion;
+    if (respuesta === "C. Todos aquellos que puedan tener algún uso para la herramienta") {
+        puntuacion = 2;
+        mensaje = "Respuesta Correcta. Su puntuación es: " + puntuacion;
+    }
+    else if (respuesta === "No ha cumplimentado la respuesta") {
+        puntuacion = 0;
+        mensaje = "No ha cumplimentado su respuesta. Su puntuación es: " + puntuacion;
+    }
+
+    else {
+        puntuacion = -1;
+        mensaje = "Repuesta Incorrecta. Su puntuación es: " + puntuacion;
+    }
+    imprimir(mensaje, "correcta2");
+}
+
+
+function mostrarrespuesta3() {
+    let respuestaSeleccionada3 = document.getElementById("pregunta3").value;
+    let mensaje = "Su respuesta: " + respuestaSeleccionada3;
+    imprimir(mensaje, "hacontestado3");
+
+    let parrafo = document.getElementById("mostrarrespuesta3");
+    parrafo.innerText = "A. Requerimientos";
+    let newColor2 = "green";
+    mostrarrespuesta1.style.color = newColor2;
+}
+
+
+function vercorrecta3() {
+    let respuesta = document.getElementById("pregunta3").value;
+    let mensaje = "";
+    let puntuacion;
+    if (respuesta === "A. Requerimientos") {
+        puntuacion = 2;
+        mensaje = "Respuesta Correcta. Su puntuación es: " + puntuacion;
+    }
+    else if (respuesta === "No ha cumplimentado la respuesta") {
+        puntuacion = 0;
+        mensaje = "No ha cumplimentado su respuesta. Su puntuación es: " + puntuacion;
+    }
+
+    else {
+        puntuacion = -1;
+        mensaje = "Repuesta Incorrecta. Su puntuación es: " + puntuacion;
+    }
+    imprimir(mensaje, "correcta3");
+}

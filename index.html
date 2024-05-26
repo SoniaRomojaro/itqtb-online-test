@@ -68,7 +68,7 @@
 
             <form id="seleccionarpregunta" class="was-validated">
                 <div class="mb-3">
-                    <input type="text" id="preguntaseleccionada" placeholder="Introduzca el Id de la pregunta a contestar" required
+                    <input type="text" id="preguntaseleccionada" placeholder="Introduzca el texto completo de la pregunta a contestar" required
                         class="form-control">
                     <p class="valid-feedback">Correcto</p>
                     <p class="invalid-feedback">El campo es obligatorio</p>
@@ -108,18 +108,31 @@
 
 
             <select id="pregunta2" class="form-select">
-                <option value="A. 2">A. 2</option>
-                <option value="B. 2">B. 2</option>
-                <option value="C. 2s">C. 2</option>
+                <option value="A. No se deben usar herramientas de prueba">A. No se deben usar herramientas de prueba</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+                <option value="C. Todos aquellos que puedan tener algún uso para la herramienta">C. Todos aquellos que puedan tener algún uso para la herramienta</option>
+                <option value="D. Los gerentes para determinar en qué proyectos debería usarse">D. Los gerentes para determinar en qué proyectos debería usarse</option>
+            </select>
+
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta2()">Mostrar Respuesta</button>
+            <p id="hacontestado2"></p>
+            <p id="mostrarrespuesta2"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta2()">Corregir</button>
+            <p id="correcta2"></p>
+
+
+            <select id="pregunta3" class="form-select">
+                <option value="A. Requerimientos">A. Requerimientos</option>
+                <option value="B. no deben basarse en nada">B. no deben basarse en nada</option>
+                <option value="C. Codigo 3">C. Codigo</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <select id="pregunta3" class="form-select">
-                <option value="A. 3">A. 3</option>
-                <option value="B. 3">B. 3</option>
-                <option value="C. 3">C. 3</option>
-                <option value="No ha cumplimentado la respuesta"></option>
-            </select>
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta3()">Mostrar Respuesta</button>
+            <p id="hacontestado3"></p>
+            <p id="mostrarrespuesta3"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta3()">Corregir</button>
+            <p id="correcta3"></p>
 
             <select id="pregunta4" class="form-select">
                 <option value="A. 4">A. 4</option>
