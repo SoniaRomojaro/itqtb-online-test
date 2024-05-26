@@ -61,9 +61,33 @@
         <div id="test">
             <h2 style="background-color:slateblue;">TEST</h2>
             <p>Istqb Online Test Section:</p>
+            
+            <button type="button" class="btn btn-success" onclick="mostrarLista()">Mostrar Lista de las Preguntas</button>
+            <p id="mostrartodas"></p>
 
-            <p><b>PREGUNTA 1. ¿QUÉ TIPO DE PRUEBAS SE HACEN TRAS UN DESPLIEGUE? Por favor, seleccione únicamente 1
-                    opción</b></p>
+
+            <form id="seleccionarpregunta" class="was-validated">
+                <div class="mb-3">
+                    <input type="text" id="preguntaseleccionada" placeholder="Introduzca el Id de la pregunta a contestar" required
+                        class="form-control">
+                    <p class="valid-feedback">Correcto</p>
+                    <p class="invalid-feedback">El campo es obligatorio</p>
+                </div>
+                <button type="button" class="btn btn-success" onclick="seleccionarPreguntacontestar()">Seleccionar pregunta</button>
+            </form>
+            <p id="pregunta"></p>
+
+
+
+
+
+
+
+
+
+
+
+
 
             <select id="pregunta1" class="form-select">
                 <option value="A. No se recomienda hacer pruebas en esta situación">A. No se recomienda hacer pruebas en
@@ -73,13 +97,80 @@
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            
+
+
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta()">Mostrar Respuesta</button>
             <p id="hacontestado"></p>
             <p id="mostrarrespuesta1"></p>
             <button type="button" class="btn btn-primary" onclick="vercorrecta()">Corregir</button>
             <p id="correcta"></p>
-            <button type="button" class="btn btn-primary" onclick="verpuntuacion()">Ver Puntuación</button>
-            <p id="puntuacion"></p>
+
+
+            <select id="pregunta2" class="form-select">
+                <option value="A. 2">A. 2</option>
+                <option value="B. 2">B. 2</option>
+                <option value="C. 2s">C. 2</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta3" class="form-select">
+                <option value="A. 3">A. 3</option>
+                <option value="B. 3">B. 3</option>
+                <option value="C. 3">C. 3</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta4" class="form-select">
+                <option value="A. 4">A. 4</option>
+                <option value="B. 4">B. 4</option>
+                <option value="C. 4">C. 4</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta5" class="form-select">
+                <option value="A. 5">A. 5</option>
+                <option value="B. 5">B. 5</option>
+                <option value="C. 5">C. 5</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+
+            <select id="pregunta6" class="form-select">
+                <option value="A. 6">A. 6</option>
+                <option value="B. 6">B. 6</option>
+                <option value="C. 6">C. 6</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta7" class="form-select">
+                <option value="A. 7">A. 7</option>
+                <option value="B. 7">B. 7</option>
+                <option value="C. 7">C. 7</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta8" class="form-select">
+                <option value="A. 8">A. 8</option>
+                <option value="B. 8">B. 8</option>
+                <option value="C. 8">C. 9</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta9" class="form-select">
+                <option value="A. 9">A. 9</option>
+                <option value="B. 9">B. 9</option>
+                <option value="C. 9">C. 9</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
+            <select id="pregunta10" class="form-select">
+                <option value="A. 10">A. 10</option>
+                <option value="B. 10">B. 10</option>
+                <option value="C. 10">C. 10</option>
+                <option value="No ha cumplimentado la respuesta"></option>
+            </select>
+
         </div>
 
 

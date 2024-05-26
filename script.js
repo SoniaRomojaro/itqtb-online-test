@@ -14,16 +14,51 @@ function bienvenida() {
 }
 
 
+let listaPreguntas = ["1.¿Qué tipo de pruebas se hacen tras un despliegue?", "2. Pregunta2", "3. Pregunta3", "4. Pregunta4", "5. Pregunta5", "6. Pregunta6", "7. Pregunta7", "8. Pregunta8", "9. Pregunta9", "10. Pregunta10"];
+
+function mostrarLista() {
+    mensaje = "Las preguntas a contestar son: " + listaPreguntas;
+    imprimir(mensaje,"mostrartodas");
+}
+
+
+
+
+function seleccionarPreguntacontestar() {
+    let elemento = document.getElementById("preguntaseleccionada").value;
+    let posicionpregunta = listaPreguntas.indexOf(elemento);
+    let mensaje = ""
+    let haz
+    if(posicionpregunta === -1){
+        mensaje = "El elemento no se encuentra en la lista";
+       
+
+    }else {
+        mensaje = "Por favor, conteste a la pregunta: " + elemento + posicionpregunta;
+    }
+   
+    
+
+
+
+
+
+    imprimir(mensaje,"pregunta");
+}
+
+
+
+
+
+
+
+
 
 
 function mostrarrespuesta() {
     let respuestaSeleccionada = document.getElementById("pregunta1").value;
     let mensaje = "Su respuesta: " + respuestaSeleccionada;
     imprimir(mensaje, "hacontestado");
-    let newColor = "violet";
-    pregunta1.style.color = newColor;
-    let newColor3 = "blue";
-    hacontestado.style.color = newColor3;
 
     let parrafo = document.getElementById("mostrarrespuesta1");
     parrafo.innerText = "La respuesta correcta es B: Pruebas de Regresión";
@@ -35,32 +70,20 @@ function mostrarrespuesta() {
 function vercorrecta() {
     let respuesta = document.getElementById("pregunta1").value;
     let mensaje = "";
+    let puntuacion;
     if (respuesta === "B. Pruebas de Regresión") {
-        mensaje = "Respuesta Correcta";
+        puntuacion = 2;
+        mensaje = "Respuesta Correcta. Su puntuación es: " + puntuacion;
     }
     else if (respuesta === "No ha cumplimentado la respuesta") {
-        mensaje = "No ha cumplimentado su respuesta";
+        puntuacion = 0;
+        mensaje = "No ha cumplimentado su respuesta. Su puntuación es: " + puntuacion;
     }
 
     else {
-        mensaje = "Repuesta Incorrecta";
+        puntuacion = -1;
+        mensaje = "Repuesta Incorrecta. Su puntuación es: " + puntuacion;
     }
     imprimir(mensaje, "correcta");
 }
 
-function verpuntuacion() {
-    let puntuacion = document.getElementById("pregunta1").value;
-    let mensaje = "";
-    let puntos;
-    if (puntuacion === "B. Pruebas de Regresión") {
-        puntos = 2;
-    }
-    else if (puntuacion === "No ha cumplimentado la respuesta") {
-        puntos = 0;
-    }
-    else {
-        puntos = -1;
-    }
-    mensaje = "Su puntuación es de: " + puntos;
-    imprimir(mensaje, "puntuacion");
-}
