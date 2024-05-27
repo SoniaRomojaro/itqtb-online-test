@@ -14,31 +14,32 @@ function bienvenida() {
 }
 
 
-let listaPreguntas = ["1.¿Qué tipo de pruebas se hacen tras un despliegue?","2. ¿Cuando se compra una nueva herramienta de prueba ¿quién debería usarla al principio?", "3. Para los casos de prueba de aceptación se deben considerar:", "4. ¿Quién define el documento de Análisis Funcional?", "5. Menciona una tarea de Prueba", "6. Entre los defectos de las pruebas se incluyen:", "7. Las pruebas de Aceptación", "8. UAT significa:", "9. Prueba Funcional:", "10. Pruebas de caja blanca:"];
-
-function mostrarLista() {
-    mensaje = "Las preguntas a contestar son: " + listaPreguntas;
-    imprimir(mensaje,"mostrartodas");
-}
+let lista = ["B. Pruebas de Regresión","C. Todos aquellos que puedan tener algún uso para la herramienta","A. Requerimientos", "A. Analista funcional", "A. Diseño de Prueba","C. Calculos incorrectos", "C. Validan que el sistema esté completo", "B. Prueba de Aceptación de Usuario", "A. Evaluan las funciones que el sistema debe realizar", "A. Se  basan en la estructura interna del sistema"];
 
 
 
 
-function seleccionarPreguntacontestar() {
-    let elemento = document.getElementById("preguntaseleccionada").value;
-    let posicionpregunta = listaPreguntas.indexOf(elemento);
+
+function Mostrar() {
+    let elemento = document.getElementById("pregunta1").value;
+    let posicionElemento = lista.indexOf(elemento);
     let mensaje = ""
-    if(posicionpregunta === -1){
-        mensaje = "El elemento no se encuentra en la lista";
-       
+    if(posicionElemento === -1){
+        mensaje = "Su respuesta no es correcta";
 
     }else {
-        mensaje = "Por favor, conteste a la pregunta: " + elemento;
+        mensaje = "Su respuesta es correcta: ";
     }
-   
+
     
-    imprimir(mensaje,"pregunta");
+    imprimir(mensaje,"listaresultado");
 }
+
+
+
+
+
+
 
 
 
@@ -54,6 +55,9 @@ function mostrarrespuesta() {
     let newColor2 = "green";
     mostrarrespuesta1.style.color = newColor2;
 }
+
+
+
 
 
 function vercorrecta() {

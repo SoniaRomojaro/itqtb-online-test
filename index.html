@@ -58,35 +58,9 @@
 
         </div>
 
-        <div id="test">
-            <h2 style="background-color:slateblue;">TEST</h2>
-            <p>Istqb Online Test Section:</p>
-            
-            <button type="button" class="btn btn-success" onclick="mostrarLista()">Mostrar Lista de las Preguntas</button>
-            <p id="mostrartodas"></p>
+                
 
-
-            <form id="seleccionarpregunta" class="was-validated">
-                <div class="mb-3">
-                    <input type="text" id="preguntaseleccionada" placeholder="Introduzca el texto completo de la pregunta a contestar" required
-                        class="form-control">
-                    <p class="valid-feedback">Correcto</p>
-                    <p class="invalid-feedback">El campo es obligatorio</p>
-                </div>
-                <button type="button" class="btn btn-success" onclick="seleccionarPreguntacontestar()">Seleccionar pregunta</button>
-            </form>
-            <p id="pregunta"></p>
-
-
-
-
-
-
-
-
-
-
-
+            <p id="listaresultado"></p>
 
 
             <select id="pregunta1" class="form-select">
@@ -98,6 +72,15 @@
             </select>
 
             
+
+            
+
+
+
+
+
+
+
 
 
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta()">Mostrar Respuesta</button>
@@ -119,6 +102,15 @@
             <p id="mostrarrespuesta2"></p>
             <button type="button" class="btn btn-primary" onclick="vercorrecta2()">Corregir</button>
             <p id="correcta2"></p>
+
+
+            <button type="button" class="btn btn-success" onclick="Mostrar()">Mostrar</button>
+        </form>
+            <p id="listaresultado"></p>
+
+
+
+
 
 
             <select id="pregunta3" class="form-select">
