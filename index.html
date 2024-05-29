@@ -57,12 +57,11 @@
 
 
         </div>
+        <div id="Test">
+            <h2 style="background-color:slateblue;">TEST</h2>
+            <p>Por favor, complete las siguientes preguntas:</p>
 
-                
-
-            <p id="listaresultado"></p>
-
-
+            <h4><b>1. ¿Qué pruebas recomendaría tras un despliegue?</b></h4>
             <select id="pregunta1" class="form-select">
                 <option value="A. No se recomienda hacer pruebas en esta situación">A. No se recomienda hacer pruebas en
                     esta situación</option>
@@ -71,48 +70,35 @@
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            
-
-            
-
-
-
-
-
-
-
-
-
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta()">Mostrar Respuesta</button>
-            <p id="hacontestado"></p>
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(1)">Mostrar Respuesta</button>
+            <p id="hacontestado1"></p>
             <p id="mostrarrespuesta1"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta()">Corregir</button>
-            <p id="correcta"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(1)">Corregir</button>
+            <p id="correcta1"></p>
 
 
+
+
+            <h4><b>2. Cuando se compra una nueva herramienta de prueba, ¿quién debería usarla al principio?</b></h4>
             <select id="pregunta2" class="form-select">
-                <option value="A. No se deben usar herramientas de prueba">A. No se deben usar herramientas de prueba</option>
+                <option value="A. No se deben usar herramientas de prueba">A. No se deben usar herramientas de prueba
+                </option>
                 <option value="No ha cumplimentado la respuesta"></option>
-                <option value="C. Todos aquellos que puedan tener algún uso para la herramienta">C. Todos aquellos que puedan tener algún uso para la herramienta</option>
-                <option value="D. Los gerentes para determinar en qué proyectos debería usarse">D. Los gerentes para determinar en qué proyectos debería usarse</option>
+                <option value="C. Todos aquellos que puedan tener algún uso para la herramienta">C. Todos aquellos que
+                    puedan tener algún uso para la herramienta</option>
+                <option value="D. Los gerentes para determinar en qué proyectos debería usarse">D. Los gerentes para
+                    determinar en qué proyectos debería usarse</option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta2()">Mostrar Respuesta</button>
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(2)">Mostrar Respuesta</button>
             <p id="hacontestado2"></p>
             <p id="mostrarrespuesta2"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta2()">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(2)">Corregir</button>
             <p id="correcta2"></p>
 
 
-            <button type="button" class="btn btn-success" onclick="Mostrar()">Mostrar</button>
-        </form>
-            <p id="listaresultado"></p>
 
-
-
-
-
-
+            <h4><b>3. Para los casos de prueba de Aceptación se deben considerar</b></h4>
             <select id="pregunta3" class="form-select">
                 <option value="A. Requerimientos">A. Requerimientos</option>
                 <option value="B. no deben basarse en nada">B. no deben basarse en nada</option>
@@ -120,72 +106,134 @@
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta3()">Mostrar Respuesta</button>
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(3)">Mostrar Respuesta</button>
             <p id="hacontestado3"></p>
             <p id="mostrarrespuesta3"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta3()">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(3)">Corregir</button>
             <p id="correcta3"></p>
 
+
+            <h4><b>4. ¿Quien define el documento de Análisis Funcional?</b></h4>
             <select id="pregunta4" class="form-select">
-                <option value="A. 4">A. 4</option>
-                <option value="B. 4">B. 4</option>
-                <option value="C. 4">C. 4</option>
+                <option value="A. Analista funcional">A. Analista funcional</option>
+                <option value="B. Nadie">B. Nadie</option>
+                <option value="C. Testers">C. Testers</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(4)">Mostrar Respuesta</button>
+            <p id="hacontestado4"></p>
+            <p id="mostrarrespuesta4"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(4)">Corregir</button>
+            <p id="correcta4"></p>
+
+
+            <h4><b>5. Menciona una tarea de prueba</b></h4>
             <select id="pregunta5" class="form-select">
-                <option value="A. 5">A. 5</option>
-                <option value="B. 5">B. 5</option>
-                <option value="C. 5">C. 5</option>
+                <option value="A. Diseño de Prueba">A. Diseño de Prueba</option>
+                <option value="B. No hay tareas específicas">B. No hay tareas específicas</option>
+                <option value="C. Ninguna">C. Ninguna</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(5)">Mostrar Respuesta</button>
+            <p id="hacontestado5"></p>
+            <p id="mostrarrespuesta5"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(5)">Corregir</button>
+            <p id="correcta5"></p>
 
+
+            <h4><b>6. Entre los defectos de pruebas se incluyen</b></h4>
             <select id="pregunta6" class="form-select">
-                <option value="A. 6">A. 6</option>
-                <option value="B. 6">B. 6</option>
-                <option value="C. 6">C. 6</option>
+                <option value="A. Requisitos">A. Requisitos</option>
+                <option value="B. Ninguno">B. Ninguno</option>
+                <option value="C. Calculos incorrectos">C. Calculos incorrectos</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(6)">Mostrar Respuesta</button>
+            <p id="hacontestado6"></p>
+            <p id="mostrarrespuesta6"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(6)">Corregir</button>
+            <p id="correcta6"></p>
+
+
+
+            <h4><b>7. Las pruebas de Aceptación</b></h4>
             <select id="pregunta7" class="form-select">
-                <option value="A. 7">A. 7</option>
-                <option value="B. 7">B. 7</option>
-                <option value="C. 7">C. 7</option>
+                <option value="A. Son las primeras que se hacen">A. Son las primeras que se hacen</option>
+                <option value="B. Las hace el equipo de desarrollo">D. Las hace el equipo de desarrollo</option>
+                <option value="C. Validan que el sistema esté completo">C. Validan que el sistema esté completo</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(7)">Mostrar Respuesta</button>
+            <p id="hacontestado7"></p>
+            <p id="mostrarrespuesta7"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(7)">Corregir</button>
+            <p id="correcta7"></p>
+
+
+            <h4><b>8. UAT significa</b></h4>
             <select id="pregunta8" class="form-select">
-                <option value="A. 8">A. 8</option>
-                <option value="B. 8">B. 8</option>
-                <option value="C. 8">C. 9</option>
+                <option value="A. Nada en concreto">A. Nada en concreto</option>
+                <option value="B. Prueba de Aceptación de Usuario">B. Prueba de Aceptación de Usuario</option>
+                <option value="C. Caja negra">C. Caja negra</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(8)">Mostrar Respuesta</button>
+            <p id="hacontestado8"></p>
+            <p id="mostrarrespuesta8"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(8)">Corregir</button>
+            <p id="correcta8"></p>
+
+
+            <h4><b>9. Prueba Funcional</b></h4>
             <select id="pregunta9" class="form-select">
-                <option value="A. 9">A. 9</option>
-                <option value="B. 9">B. 9</option>
-                <option value="C. 9">C. 9</option>
+                <option value="A. Evaluan las funciones que el sistema debe realizar">A. Evaluan las funciones que el
+                    sistema debe realizar</option>
+                <option value="B. Son de caja blanca">D. Son de caja blanca</option>
+                <option value="C. Evalúa sólo el código y nada más">C. Evalúa sólo el código y nada más</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(9)">Mostrar Respuesta</button>
+            <p id="hacontestado9"></p>
+            <p id="mostrarrespuesta9"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(9)">Corregir</button>
+            <p id="correcta9"></p>
+
+
+            <h4><b>10. Pruebas de caja blanca</b></h4>
             <select id="pregunta10" class="form-select">
-                <option value="A. 10">A. 10</option>
-                <option value="B. 10">B. 10</option>
-                <option value="C. 10">C. 10</option>
+                <option value="A. Se  basan en la estructura interna del sistema">A. Se basan en la estructura interna
+                    del sistema</option>
+                <option value="B. Son las de caja negra">B. Son las de caja negra</option>
+                <option value="C. Son las de aceptación">C. Son las de aceptación</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
+            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(10)">Mostrar Respuesta</button>
+            <p id="hacontestado10"></p>
+            <p id="mostrarrespuesta10"></p>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(10)">Corregir</button>
+            <p id="correcta10"></p>
+
         </div>
 
 
+    </div>
 
 
 
-        <div id="ranking">
-            <h2 style="background-color:slateblue;">RANKING</h2>
-            <p>Student Ranking</p>
-        </div>
+
+
+    <div id="ranking">
+        <h2 style="background-color:slateblue;">RANKING</h2>
+        <p>Student Ranking</p>
+    </div>
 
     </div>
 
