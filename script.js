@@ -24,7 +24,7 @@ function mostrarrespuesta(numeroPregunta) {
     let mensaje = "Su respuesta: " + respuestaSeleccionada;
     imprimir(mensaje, "hacontestado" + numeroPregunta);
 
-    let mensaje2 = "La respuesta correcta es: " + lista[numeroPregunta - 1];
+    let mensaje2 =lista[numeroPregunta - 1];
     imprimir(mensaje2, "mostrarrespuesta" + numeroPregunta);
 
 }
@@ -52,4 +52,25 @@ function vercorrecta(numeroPregunta) {
 }
 
 
+function calcularpuntuacion(){
+    let suma = 0;
+    let longitud = lista.length;
+    let mensaje = "";   
+    for (let i=0; i<longitud; i++){
+        let respuestapuntos = document.getElementById("mostrarrespuesta"+i -1).value;
+       if (respuestapuntos === lista[i]){
+            suma +=2;
+        } else if
+           ((document.getElementById("correcta" +i-1).value) = "Respuesta Incorrecta. Su puntuación es: -1"){
+                suma -= 1;
+
+        }
+        
+        
+        }
+    
+        mensaje = "Su puntuación es " + suma;
+        imprimir(mensaje, "puntuacion");
+    
+    }
 
