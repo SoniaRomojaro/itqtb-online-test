@@ -21,7 +21,7 @@ let lista = ["B. Pruebas de Regresión", "C. Todos aquellos que puedan tener alg
 
 function mostrarrespuesta(numeroPregunta) {
     let respuestaSeleccionada = document.getElementById("pregunta" + numeroPregunta).value;
-    let mensaje = "Su respuesta: " + respuestaSeleccionada;
+    let mensaje = respuestaSeleccionada;
     imprimir(mensaje, "hacontestado" + numeroPregunta);
 
     let mensaje2 =lista[numeroPregunta - 1];
@@ -57,18 +57,23 @@ function calcularpuntuacion(){
     let longitud = lista.length;
     let mensaje = "";   
     for (let i=0; i<longitud; i++){
-        let respuestapuntos = document.getElementById("mostrarrespuesta"+i -1).value;
-       if (respuestapuntos === lista[i]){
+        let respuestapuntos = document.getElementById("hacontestado"+(i+1)).value;
+       if (respuestapuntos === lista[numeroPregunta-1]){
             suma +=2;
-        } else if
-           ((document.getElementById("correcta" +i-1).value) = "Respuesta Incorrecta. Su puntuación es: -1"){
-                suma -= 1;
+        } 
+        else if (respuestapuntos === "No ha cumplimentado la respuesta"){
+                suma = 0;
+            } 
+        
+        else {
+            suma -= 1;
+
+        }
 
         }
         
-        
-        }
-    
+        return suma;    
+
         mensaje = "Su puntuación es " + suma;
         imprimir(mensaje, "puntuacion");
     
