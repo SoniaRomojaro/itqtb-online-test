@@ -53,20 +53,16 @@ function vercorrecta(numeroPregunta) {
 
 
 
-
-
-
-
 function calcularpuntuacion(){
     let suma = 0;
     let longitud = lista.length;
     let mensaje = "";   
     for (let i=0; i<longitud; i++){
         let respuestapuntos = document.getElementById("hacontestado"+(i+1)).value;
-       if (respuestapuntos ===lista[i]){
+         if (respuestapuntos ===lista[i]){
             suma +=2;
         } 
-        else if (respuestapuntos =="No ha cumplimentado la respuesta"){
+        else if (respuestapuntos ==="No ha cumplimentado la respuesta"){
             } 
         
         else {
@@ -82,14 +78,15 @@ function calcularpuntuacion(){
     
     }
 
+
     function borrarRespuesta(){
         document.getElementById("ejemploformularioson").reset();
         document.getElementById("Test").reset();
-
-        document.getElementById("funcionesbienvenida").innerHTML = "";
-        document.getElementById("hacontestado1").innerHTML = "";
-        document.getElementById("mostrarrespuesta1").innerHTML = "";
-        document.getElementById("correcta1").innerHTML = "";
-
-    }
     
+        for (let i = 0; i < lista.length; i++) {
+        document.getElementById("funcionesbienvenida").innerHTML = "";
+        document.getElementById("hacontestado"+(i+1)).innerHTML = "";
+        document.getElementById("mostrarrespuesta"+(i+1)).innerHTML = "";
+        document.getElementById("correcta"+(i+1)).innerHTML = "";
+    }
+    }
