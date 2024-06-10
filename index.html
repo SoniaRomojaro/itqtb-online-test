@@ -40,7 +40,7 @@
             <p>Welcome to ISTQB Online Test</p>
             <h4>Por favor, COMPLETE SU NOMBRE</h4>
 
-            <div id="ejemploformularioson" class="was-validated">
+            <form id="ejemploformularioson" class="was-validated">
 
                 <div class="mb-3">
                     <input type="text" id="e9texto" placeholder="Nombre" required maxlength="10" class="form-control">
@@ -52,12 +52,12 @@
 
                 <button type="button" class="btn btn-success" onclick="bienvenida()">Enviar</button>
                 <p id="funcionesbienvenida"></p>
-            </div>
+            </form>
 
 
 
         </div>
-        <div id="Test">
+        <form id="Test">
             <h2 style="background-color:slateblue;">TEST</h2>
             <p>Por favor, complete las siguientes preguntas:</p>
 
@@ -73,7 +73,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(1)">Mostrar Respuesta</button>
             <p id="hacontestado1"></p>
             <p id="mostrarrespuesta1"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(1)" onclick="calcularpuntuacion(1)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(1)">Corregir</button>
             <p id="correcta1"></p>
 
 
@@ -93,7 +93,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(2)">Mostrar Respuesta</button>
             <p id="hacontestado2"></p>
             <p id="mostrarrespuesta2"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(2)" onclick="calcularpuntuacion(2)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(2)">Corregir</button>
             <p id="correcta2"></p>
 
 
@@ -109,7 +109,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(3)">Mostrar Respuesta</button>
             <p id="hacontestado3"></p>
             <p id="mostrarrespuesta3"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(3)" onclick="calcularpuntuacion(3)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(3)">Corregir</button>
             <p id="correcta3"></p>
 
 
@@ -124,7 +124,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(4)">Mostrar Respuesta</button>
             <p id="hacontestado4"></p>
             <p id="mostrarrespuesta4"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(4)" onclick="calcularpuntuacion(4)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(4)">Corregir</button>
             <p id="correcta4"></p>
 
 
@@ -139,7 +139,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(5)">Mostrar Respuesta</button>
             <p id="hacontestado5"></p>
             <p id="mostrarrespuesta5"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(5)"onclick="calcularpuntuacion(5)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(5)">Corregir</button>
             <p id="correcta5"></p>
 
 
@@ -154,7 +154,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(6)">Mostrar Respuesta</button>
             <p id="hacontestado6"></p>
             <p id="mostrarrespuesta6"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(6)" onclick="calcularpuntuacion(6)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(6)">Corregir</button>
             <p id="correcta6"></p>
 
 
@@ -171,7 +171,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(7)">Mostrar Respuesta</button>
             <p id="hacontestado7"></p>
             <p id="mostrarrespuesta7"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(7)" onclick="calcularpuntuacion(7)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(7)">Corregir</button>
             <p id="correcta7"></p>
 
 
@@ -186,7 +186,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(8)">Mostrar Respuesta</button>
             <p id="hacontestado8"></p>
             <p id="mostrarrespuesta8"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(8)" onclick="calcularpuntuacion(8)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(8)">Corregir</button>
             <p id="correcta8"></p>
 
 
@@ -202,7 +202,7 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(9)">Mostrar Respuesta</button>
             <p id="hacontestado9"></p>
             <p id="mostrarrespuesta9"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(9)" onclick="calcularpuntuacion(9)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(9)">Corregir</button>
             <p id="correcta9"></p>
 
 
@@ -218,14 +218,15 @@
             <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(10)">Mostrar Respuesta</button>
             <p id="hacontestado10"></p>
             <p id="mostrarrespuesta10"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(10)" onclick="calcularpuntuacion(10)">Corregir</button>
+            <button type="button" class="btn btn-primary" onclick="vercorrecta(10)">Corregir</button>
             <p id="correcta10"></p>
 
-            <button type="button" class="btn btn-primary" onclick="calcularpuntuacion(numeroPregunta)">Calcular Puntuación</button>
+            <button type="button" class="btn btn-primary" onclick="calcularpuntuacion()">Calcular Puntuación</button>
             <p id="puntuacion"></p>
 
-
-        </div>
+            <button type="button" class="btn btn-primary" onclick="borrarRespuesta()">Borrar</button>
+           
+        </form>
 
           
     </div>
