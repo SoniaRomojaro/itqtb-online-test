@@ -52,17 +52,17 @@ function vercorrecta(numeroPregunta) {
 }
 
 
-function calcularpuntuacion(){
+function calcularpuntuacion(numeroPregunta){
     let suma = 0;
     let longitud = lista.length;
     let mensaje = "";   
     for (let i=0; i<longitud; i++){
-        let respuestapuntos = document.getElementById("hacontestado"+(i+1)).value;
-       if (respuestapuntos === lista[numeroPregunta-1]){
+        let respuestapuntos = document.getElementById("hacontestado"+i).value;
+       if (respuestapuntos === lista[numeroPregunta - 1]){
             suma +=2;
         } 
         else if (respuestapuntos === "No ha cumplimentado la respuesta"){
-                suma = 0;
+             
             } 
         
         else {
@@ -72,8 +72,7 @@ function calcularpuntuacion(){
 
         }
         
-        return suma;    
-
+        
         mensaje = "Su puntuación es " + suma;
         imprimir(mensaje, "puntuacion");
     
