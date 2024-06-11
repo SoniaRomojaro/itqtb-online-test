@@ -63,6 +63,7 @@ function calcularpuntuacion(){
             suma +=2;
         } 
         else if (respuestapuntos ==="No ha cumplimentado la respuesta"){
+            suma+=0;
             } 
         
         else {
@@ -75,7 +76,8 @@ function calcularpuntuacion(){
         
         mensaje = "Su puntuación es " + suma;
         imprimir(mensaje, "puntuacion");
-    
+        
+        borrarRespuesta()
     }
 
 
@@ -90,3 +92,17 @@ function calcularpuntuacion(){
         document.getElementById("correcta"+(i+1)).innerHTML = "";
     }
     }
+
+    let alumnos = [];
+
+    function verRanking () {
+        let mensaje = "";
+        for(i=0; i<alumnos.length; i++) {
+            mensaje+= " Nombre:" + alumnos[i].nombre;
+            mensaje+= "Edad: " + alumnos[i].edad;
+            
+        }
+        imprimir(mensaje,"ranking");
+    }
+    
+    
