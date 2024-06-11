@@ -99,7 +99,7 @@ function calcularpuntuacion(){
         let mensaje = "";
         for(i=0; i<alumnos.length; i++) {
             mensaje+= " Nombre:" + alumnos[i].nombre;
-            mensaje+= "Edad: " + alumnos[i].edad;
+            mensaje+= "puntuacion: " + alumnos[i].puntuacion;
             
         }
         imprimir(mensaje,"ranking");
