@@ -58,7 +58,7 @@ function calcularpuntuacion(){
     let longitud = lista.length;
     let mensaje = "";   
     for (let i=0; i<longitud; i++){
-        let respuestapuntos = document.getElementById("hacontestado"+(i+1)).value;
+        let respuestapuntos = document.getElementById("pregunta"+(i+1)).value;
          if (respuestapuntos ===lista[i]){
             suma +=2;
         } 
@@ -76,7 +76,7 @@ function calcularpuntuacion(){
         
         mensaje = "Su puntuación es " + suma;
         imprimir(mensaje, "puntuacion");
-        
+
         borrarRespuesta()
     }
 
