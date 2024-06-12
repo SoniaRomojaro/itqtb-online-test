@@ -1,3 +1,6 @@
+let nombrebienvenida = "";
+let suma = "";
+
 
 function imprimir(mensaje, id) {
     let parrafo = document.getElementById(id);
@@ -6,7 +9,7 @@ function imprimir(mensaje, id) {
 
 
 function bienvenida() {
-    let nombrebienvenida = document.getElementById("e9texto").value;
+    nombrebienvenida = document.getElementById("e9texto").value;
     let mensaje = "Bienvenido/a a su examen: " + nombrebienvenida + ". Por favor, complete las preguntas. Dispone de 60 minutos.";
     imprimir(mensaje, "funcionesbienvenida");
     let newColor5 = "blue";
@@ -93,11 +96,16 @@ function calcularpuntuacion(){
     }
     }
 
-    let alumnos = [];
+    
 
     function verRanking () {
+        let estudiante = {};
         let mensaje = "";
-        for(i=0; i<alumnos.length; i++) {
+
+        estudiante["nombre"] = nombrebienvenida;
+        estudiante["puntuacion"] = suma;
+
+        for(let i=0; i<alumnos.length; i++) {
             mensaje+= " Nombre:" + alumnos[i].nombre;
             mensaje+= "puntuacion: " + alumnos[i].puntuacion;
             
@@ -105,4 +113,5 @@ function calcularpuntuacion(){
         imprimir(mensaje,"ranking");
     }
     
+
     
