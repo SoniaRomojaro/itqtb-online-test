@@ -97,21 +97,37 @@ function calcularpuntuacion(){
     }
 
     
-
+    
     function verRanking () {
         let estudiante = {};
+      
+        estudiante = {
+        nombre: nombrebienvenida,
+        puntuacion: suma
+    }
+
+    alumnos.push(estudiante);
+
+    
+    imprimirAlumnos();
+
+    }
+
+
+    function imprimirAlumnos(){
         let mensaje = "";
 
-        estudiante["nombre"] = nombrebienvenida;
-        estudiante["puntuacion"] = suma;
+        for (i=0; i<alumnos.length;i++) {
+            let estudiante = alumnos[i];
 
-        for(let i=0; i<alumnos.length; i++) {
-            mensaje+= " Nombre:" + alumnos[i].nombre;
-            mensaje+= "puntuacion: " + alumnos[i].puntuacion;
-            
-        }
-        imprimir(mensaje,"ranking");
+            mensaje+= "\n Nombre: " + estudiante.nombre;
+            mensaje+= "\n Puntuación: " + estudiante.puntuacion;
+
     }
-    
+
+             imprimir(mensaje,"ranking");
+
+}
+
 
     
