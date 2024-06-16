@@ -80,7 +80,13 @@ function calcularpuntuacion(){
         mensaje = "Su puntuación es " + suma;
         imprimir(mensaje, "puntuacion");
 
+
+        
         borrarRespuesta()
+        verRanking ()
+
+
+
     }
 
 
@@ -107,11 +113,9 @@ function calcularpuntuacion(){
     }
 
     alumnos.push(estudiante);
-
-    
-    imprimirAlumnos();
-
+      
     }
+
 
 
     function imprimirAlumnos(){
