@@ -117,8 +117,15 @@ function calcularpuntuacion(){
     }
 
 
+    function ordenar(){
+        alumnos.sort((a, b) => b.puntuacion - a.puntuacion);
+
+}
 
     function imprimirAlumnos(){
+
+        ordenar()
+
         let mensaje = "";
 
         for (i=0; i<alumnos.length;i++) {
@@ -128,10 +135,11 @@ function calcularpuntuacion(){
             mensaje+= "\n Puntuación: " + estudiante.puntuacion;
 
     }
+            
 
-             imprimir(mensaje,"ranking");
+            imprimir(mensaje,"ranking");
 
-}
-
-
-    
+        }                      
+         
+       
+   
