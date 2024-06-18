@@ -55,9 +55,10 @@ function vercorrecta(numeroPregunta) {
 }
 
 
-
+        suma = 0;
+        
 function calcularpuntuacion(){
-    let suma = 0;
+        suma = 0;
     let longitud = lista.length;
     let mensaje = "";   
     for (let i=0; i<longitud; i++){
@@ -103,7 +104,8 @@ function calcularpuntuacion(){
     }
 
     
-    
+    let alumnos = []
+
     function verRanking () {
         let estudiante = {};
       
