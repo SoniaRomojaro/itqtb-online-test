@@ -62,7 +62,7 @@
             <p>Por favor, complete las siguientes preguntas:</p>
 
             <h4><b>1. ¿Qué pruebas recomendaría tras un despliegue?</b></h4>
-            <select id="pregunta1" class="form-select">
+            <select id="pregunta1" data-cy="question1" class="form-select">
                 <option value="A. No se recomienda hacer pruebas en esta situación">A. No se recomienda hacer pruebas en
                     esta situación</option>
                 <option value="B. Pruebas de Regresión">B. Pruebas de Regresión</option>
@@ -70,17 +70,17 @@
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(1)">Mostrar Respuesta</button>
-            <p id="hacontestado1"></p>
+            <button type="button" data-cy="button-mostrar-question1"class="btn btn-primary" onclick="mostrarrespuesta(1)">Mostrar Respuesta</button>
+            <p id="hacontestado1" data cy="hacontestadopregunta1"></p>
             <p id="mostrarrespuesta1"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(1)">Corregir</button>
-            <p id="correcta1"></p>
+            <button type="button" data-cy="button-correcta-question1"class="btn btn-primary" onclick="vercorrecta(1)">Corregir</button>
+            <p id="correcta1" data cy="correctapregunta1"></p>
 
 
 
 
             <h4><b>2. Cuando se compra una nueva herramienta de prueba, ¿quién debería usarla al principio?</b></h4>
-            <select id="pregunta2" class="form-select">
+            <select id="pregunta2" data-cy="question2" class="form-select">
                 <option value="A. No se deben usar herramientas de prueba">A. No se deben usar herramientas de prueba
                 </option>
                 <option value="No ha cumplimentado la respuesta"></option>
@@ -90,77 +90,77 @@
                     determinar en qué proyectos debería usarse</option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(2)">Mostrar Respuesta</button>
-            <p id="hacontestado2"></p>
+            <button type="button" data-cy="button-mostrar-question2" class="btn btn-primary" onclick="mostrarrespuesta(2)">Mostrar Respuesta</button>
+            <p id="hacontestado2" data cy="hacontestadopregunta2"></p>
             <p id="mostrarrespuesta2"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(2)">Corregir</button>
-            <p id="correcta2"></p>
+            <button type="button" data-cy="button-correcta-question2"class="btn btn-primary" onclick="vercorrecta(2)">Corregir</button>
+            <p id="correcta2" data cy="correctapregunta2"></p>
 
 
 
             <h4><b>3. Para los casos de prueba de Aceptación se deben considerar</b></h4>
-            <select id="pregunta3" class="form-select">
+            <select id="pregunta3" data-cy="question3"class="form-select">
                 <option value="A. Requerimientos">A. Requerimientos</option>
                 <option value="B. no deben basarse en nada">B. no deben basarse en nada</option>
                 <option value="C. Codigo 3">C. Codigo</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(3)">Mostrar Respuesta</button>
-            <p id="hacontestado3"></p>
+            <button type="button" data-cy="button-mostrar-question3" class="btn btn-primary" onclick="mostrarrespuesta(3)">Mostrar Respuesta</button>
+            <p id="hacontestado3"data cy="hacontestadopregunta3"></p>
             <p id="mostrarrespuesta3"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(3)">Corregir</button>
-            <p id="correcta3"></p>
+            <button type="button" data-cy="button-correcta-question3"class="btn btn-primary" onclick="vercorrecta(3)">Corregir</button>
+            <p id="correcta3" data cy="correctapregunta3"></p>
 
 
             <h4><b>4. ¿Quien define el documento de Análisis Funcional?</b></h4>
-            <select id="pregunta4" class="form-select">
+            <select id="pregunta4"data-cy="question4" class="form-select">
                 <option value="A. Analista funcional">A. Analista funcional</option>
                 <option value="B. Nadie">B. Nadie</option>
                 <option value="C. Testers">C. Testers</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(4)">Mostrar Respuesta</button>
-            <p id="hacontestado4"></p>
+            <button type="button" data-cy="button-mostrar-question4" class="btn btn-primary" onclick="mostrarrespuesta(4)">Mostrar Respuesta</button>
+            <p id="hacontestado4"data cy="hacontestadopregunta4"></p>
             <p id="mostrarrespuesta4"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(4)">Corregir</button>
-            <p id="correcta4"></p>
+            <button type="button" data-cy="button-correcta-question4" class="btn btn-primary" onclick="vercorrecta(4)">Corregir</button>
+            <p id="correcta4" data cy="correctapregunta4"></p>
 
 
             <h4><b>5. Menciona una tarea de prueba</b></h4>
-            <select id="pregunta5" class="form-select">
+            <select id="pregunta5" data-cy="question5"class="form-select">
                 <option value="A. Diseño de Prueba">A. Diseño de Prueba</option>
                 <option value="B. No hay tareas específicas">B. No hay tareas específicas</option>
                 <option value="C. Ninguna">C. Ninguna</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(5)">Mostrar Respuesta</button>
-            <p id="hacontestado5"></p>
+            <button type="button" data-cy="button-mostrar-question5" class="btn btn-primary" onclick="mostrarrespuesta(5)">Mostrar Respuesta</button>
+            <p id="hacontestado5" data cy="hacontestadopregunta5"></p>
             <p id="mostrarrespuesta5"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(5)">Corregir</button>
-            <p id="correcta5"></p>
+            <button type="button" data-cy="button-correcta-question5" class="btn btn-primary" onclick="vercorrecta(5)">Corregir</button>
+            <p id="correcta5" data cy="correctapregunta5"></p>
 
 
             <h4><b>6. Entre los defectos de pruebas se incluyen</b></h4>
-            <select id="pregunta6" class="form-select">
+            <select id="pregunta6" data-cy="question6"class="form-select">
                 <option value="A. Requisitos">A. Requisitos</option>
                 <option value="B. Ninguno">B. Ninguno</option>
                 <option value="C. Calculos incorrectos">C. Calculos incorrectos</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(6)">Mostrar Respuesta</button>
-            <p id="hacontestado6"></p>
+            <button type="button" data-cy="button-mostrar-question6" class="btn btn-primary" onclick="mostrarrespuesta(6)">Mostrar Respuesta</button>
+            <p id="hacontestado6" data cy="hacontestadopregunta6"></p>
             <p id="mostrarrespuesta6"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(6)">Corregir</button>
-            <p id="correcta6"></p>
+            <button type="button" data-cy="button-correcta-question6" class="btn btn-primary" onclick="vercorrecta(6)">Corregir</button>
+            <p id="correcta6" data cy="correctapregunta6"></p>
 
 
 
             <h4><b>7. Las pruebas de Aceptación</b></h4>
-            <select id="pregunta7" class="form-select">
+            <select id="pregunta7" data-cy="question7"class="form-select">
                 <option value="A. Son las primeras que se hacen">A. Son las primeras que se hacen</option>
                 <option value="B. Las hace el equipo de desarrollo">D. Las hace el equipo de desarrollo</option>
                 <option value="C. Validan que el sistema esté completo">C. Validan que el sistema esté completo</option>
@@ -168,30 +168,30 @@
             </select>
 
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(7)">Mostrar Respuesta</button>
-            <p id="hacontestado7"></p>
+            <button type="button" data-cy="button-mostrar-question7" class="btn btn-primary" onclick="mostrarrespuesta(7)">Mostrar Respuesta</button>
+            <p id="hacontestado7" data cy="hacontestadopregunta7"></p>
             <p id="mostrarrespuesta7"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(7)">Corregir</button>
-            <p id="correcta7"></p>
+            <button type="button" data-cy="button-correcta-question7" class="btn btn-primary" onclick="vercorrecta(7)">Corregir</button>
+            <p id="correcta7" data cy="correctapregunta7"></p>
 
 
             <h4><b>8. UAT significa</b></h4>
-            <select id="pregunta8" class="form-select">
+            <select id="pregunta8" data-cy="question8" class="form-select">
                 <option value="A. Nada en concreto">A. Nada en concreto</option>
                 <option value="B. Prueba de Aceptación de Usuario">B. Prueba de Aceptación de Usuario</option>
                 <option value="C. Caja negra">C. Caja negra</option>
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(8)">Mostrar Respuesta</button>
-            <p id="hacontestado8"></p>
+            <button type="button" data-cy="button-mostrar-question8" class="btn btn-primary" onclick="mostrarrespuesta(8)">Mostrar Respuesta</button>
+            <p id="hacontestado8" data cy="hacontestadopregunta8"></p>
             <p id="mostrarrespuesta8"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(8)">Corregir</button>
-            <p id="correcta8"></p>
+            <button type="button" data-cy="button-correcta-question8"class="btn btn-primary" onclick="vercorrecta(8)">Corregir</button>
+            <p id="correcta8" data cy="correctapregunta8"></p>
 
 
             <h4><b>9. Prueba Funcional</b></h4>
-            <select id="pregunta9" class="form-select">
+            <select id="pregunta9" data-cy="question9" class="form-select">
                 <option value="A. Evaluan las funciones que el sistema debe realizar">A. Evaluan las funciones que el
                     sistema debe realizar</option>
                 <option value="B. Son de caja blanca">D. Son de caja blanca</option>
@@ -199,15 +199,15 @@
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(9)">Mostrar Respuesta</button>
-            <p id="hacontestado9"></p>
+            <button type="button" data-cy="button-mostrar-question9" class="btn btn-primary" onclick="mostrarrespuesta(9)">Mostrar Respuesta</button>
+            <p id="hacontestado9"data cy="hacontestadopregunta9"></p>
             <p id="mostrarrespuesta9"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(9)">Corregir</button>
-            <p id="correcta9"></p>
+            <button type="button" data-cy="button-correcta-question9" class="btn btn-primary" onclick="vercorrecta(9)">Corregir</button>
+            <p id="correcta9" data cy="correctapregunta9"></p>
 
 
             <h4><b>10. Pruebas de caja blanca</b></h4>
-            <select id="pregunta10" class="form-select">
+            <select id="pregunta10" data-cy="question10" class="form-select">
                 <option value="A. Se  basan en la estructura interna del sistema">A. Se basan en la estructura interna
                     del sistema</option>
                 <option value="B. Son las de caja negra">B. Son las de caja negra</option>
@@ -215,14 +215,14 @@
                 <option value="No ha cumplimentado la respuesta"></option>
             </select>
 
-            <button type="button" class="btn btn-primary" onclick="mostrarrespuesta(10)">Mostrar Respuesta</button>
-            <p id="hacontestado10"></p>
+            <button type="button" data-cy="button-mostrar-question10" class="btn btn-primary" onclick="mostrarrespuesta(10)">Mostrar Respuesta</button>
+            <p id="hacontestado10" data cy="hacontestadopregunta10"></p>
             <p id="mostrarrespuesta10"></p>
-            <button type="button" class="btn btn-primary" onclick="vercorrecta(10)">Corregir</button>
-            <p id="correcta10"></p>
+            <button type="button" data-cy="button-correcta-question10" class="btn btn-primary" onclick="vercorrecta(10)">Corregir</button>
+            <p id="correcta10" data cy="correctapregunta10"></p>
 
-            <button type="button" class="btn btn-primary" onclick="calcularpuntuacion()";>Calcular Puntuación</button>
-            <p id="puntuacion"></p>
+            <button type="button" data-cy="button-calcularpuntuacion"class="btn btn-primary" onclick="calcularpuntuacion()";>Calcular Puntuación</button>
+            <p id="puntuacion" data cy="puntuacionfinal"></p>
 
                        
         </form>
