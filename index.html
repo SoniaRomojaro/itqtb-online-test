@@ -43,15 +43,15 @@
             <form id="ejemploformularioson" class="was-validated">
 
                 <div class="mb-3">
-                    <input type="text" id="e9texto" placeholder="Nombre" required maxlength="10" class="form-control">
-                    <p class="valid-feedback">El texto introducido es correcto</p>
-                    <p class="invalid-feedback">El campo texto es obligatorio y debe máximo 10 caracteres</p>
+                    <input type="text" id="e9texto" data-cy="input-welcome-name" placeholder="Nombre" required maxlength="10" class="form-control">
+                    <p class="valid-feedback" data-cy="success-welcome-message">El texto introducido es correcto</p>
+                    <p class="invalid-feedback" data-cy="error-welcome-message">El campo texto es obligatorio y debe máximo 10 caracteres</p>
                 </div>
 
 
 
-                <button type="button" class="btn btn-success" onclick="bienvenida()">Enviar</button>
-                <p id="funcionesbienvenida"></p>
+                <button type="button" class="btn btn-success" data-cy="button-start"onclick="bienvenida()">Enviar</button>
+                <p id="funcionesbienvenida" data-cy="welcome-message"></p>
             </form>
 
 
