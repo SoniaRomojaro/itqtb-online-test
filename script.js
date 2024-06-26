@@ -1,6 +1,7 @@
 let nombrebienvenida = "";
-let suma = "";
-
+let suma = 0;
+let lista = ["B. Pruebas de Regresión", "B. Todos aquellos que puedan tener algún uso para la herramienta", "A. Requerimientos", "A. Analista funcional", "A. Diseño de Prueba", "C. Calculos incorrectos", "C. Validan que el sistema esté completo", "B. Prueba de Aceptación de Usuario", "A. Evaluan las funciones que el sistema debe realizar", "A. Se  basan en la estructura interna del sistema"];
+let alumnos = [];
 
 function imprimir(mensaje, id) {
     let parrafo = document.getElementById(id);
@@ -17,17 +18,17 @@ function bienvenida() {
 }
 
 
-let lista = ["B. Pruebas de Regresión", "C. Todos aquellos que puedan tener algún uso para la herramienta", "A. Requerimientos", "A. Analista funcional", "A. Diseño de Prueba", "C. Calculos incorrectos", "C. Validan que el sistema esté completo", "B. Prueba de Aceptación de Usuario", "A. Evaluan las funciones que el sistema debe realizar", "A. Se  basan en la estructura interna del sistema"];
+
 
 
 
 
 function mostrarrespuesta(numeroPregunta) {
     let respuestaSeleccionada = document.getElementById("pregunta" + numeroPregunta).value;
-    let mensaje = respuestaSeleccionada;
+    let mensaje = "Respuesta Seleccionada: " + respuestaSeleccionada;
     imprimir(mensaje, "hacontestado" + numeroPregunta);
 
-    let mensaje2 =lista[numeroPregunta - 1];
+    let mensaje2 = "Respuesta Correcta: " + lista[numeroPregunta - 1];
     imprimir(mensaje2, "mostrarrespuesta" + numeroPregunta);
 
 }
@@ -55,7 +56,6 @@ function vercorrecta(numeroPregunta) {
 }
 
 
-        suma = 0;
         
 function calcularpuntuacion(){
         suma = 0;
@@ -82,12 +82,9 @@ function calcularpuntuacion(){
         imprimir(mensaje, "puntuacion");
 
 
+        verRanking ();
+        borrarRespuesta();
         
-        borrarRespuesta()
-        verRanking ()
-
-
-
     }
 
 
@@ -95,28 +92,29 @@ function calcularpuntuacion(){
         document.getElementById("ejemploformularioson").reset();
         document.getElementById("Test").reset();
     
+        document.getElementById("funcionesbienvenida").innerText = "";
+
         for (let i = 0; i < lista.length; i++) {
-        document.getElementById("funcionesbienvenida").innerHTML = "";
-        document.getElementById("hacontestado"+(i+1)).innerHTML = "";
-        document.getElementById("mostrarrespuesta"+(i+1)).innerHTML = "";
-        document.getElementById("correcta"+(i+1)).innerHTML = "";
+        document.getElementById("hacontestado"+(i+1)).innerText = "";
+        document.getElementById("mostrarrespuesta"+(i+1)).innerText = "";
+        document.getElementById("correcta"+(i+1)).innerText = "";
     }
     }
 
     
-    let alumnos = []
+    
 
     function verRanking () {
-        let estudiante = {};
-      
-        estudiante = {
+        if(nombrebienvenida != ""){
+        let estudiante = {     
         nombre: nombrebienvenida,
         puntuacion: suma
     }
 
     alumnos.push(estudiante);
-      
-    }
+    }  
+
+ }
 
 
     function ordenar(){
