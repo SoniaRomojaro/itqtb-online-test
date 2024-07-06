@@ -1,6 +1,6 @@
 let nombrebienvenida = "";
 let suma = 0;
-let lista = ["B. Pruebas de Regresión", "B. Todos aquellos que puedan tener algún uso para la herramienta", "A. Requerimientos", "A. Analista funcional", "A. Diseño de Prueba", "C. Calculos incorrectos", "C. Validan que el sistema esté completo", "B. Prueba de Aceptación de Usuario", "A. Evaluan las funciones que el sistema debe realizar", "A. Se  basan en la estructura interna del sistema"];
+let lista = ["B. Pruebas de Regresión", "B. Todos aquellos que puedan tener algún uso para la herramienta", "A. Requerimientos", "A. Analista funcional", "A. Diseño de Prueba", "C. Calculos incorrectos", "C. Validan que el sistema esté completo", "B. Prueba de Aceptación de Usuario", "A. Evaluan las funciones que el sistema debe realizar", "A.Se basan en la estructura interna del sistema"];
 let alumnos = [];
 
 function imprimir(mensaje, id) {
